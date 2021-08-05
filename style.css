@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.first{
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(circle, black, darkturquoise, rgb(6,56,122));
+    animation-name: splefxs;
+    animation-iteration-count: 1;
+    animation-delay: 9s;
+    animation-direction: normal;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes splefxs{
+    100%{
+        background-image: radial-gradient(circle,rgb(6,56,122), black, darkturquoise);
+    }
+    50%{
+        background-image: radial-gradient(circle,rgb(6,56,122)),black,darkturquoise);
+    }
+    0%{
+        background-image: radial-gradient(circle, darkturquoise, rgb(6,56,122), black);   
+    }
+}
+.text{
+    height: 100%;
+    width: 100%;
+    line-height: 500%;
+    text-align: center;
+    font-size: 125px;
+    
+
+    position: absolute;
+    color: whitesmoke;
+    text-shadow: 4px 4px 4px black,5px 5px 5px darkslateblue, 4px 4px 4px darkturquoise;;
+    z-index: 2;
+    animation-name: effects;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-delay: 6s;
+}
+.num{
+    height: 100%;
+    width: 100%;
+    line-height: 175%;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    color: black;
+    font-size: 350px;
+    overflow: hidden;
+    animation-name: stamp;
+    animation-delay: 7s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    text-shadow: 5px 5px 5px whitesmoke,6px 6px 6px paleturquoise, 10px 10px 10px darkturquoise;;
+}
+@keyframes stamp{
+    from{
+        font-size: 1500px;
+        line-height: 40%;
+        z-index: 3;
+    }
+    to{
+        font-size: 350px;
+        line-height: 175%;
+        z-index: 1;
+    }
+}
+@keyframes effects{
+    from{
+        font-size: 25px;
+        line-height: 2400%;
+    }
+    to{
+        font-size: 125px;
+        line-height: 500%;
+    }
+}
+
+
+
+
+
+
+
+
+
+.pre{
+    color: white;
+    transition-delay: 1000ms;
+    font-size: 40px;
+
+    height: 100%;
+    width: 100%;
+    display: block;
+    z-index: -1;
+    position: absolute;
+    
+    text-shadow: 2px 2px 2px black,3px 3px 3px darkslateblue, 4px 4px 4px darkturquoise;
+    animation-name: intro;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+}
+@keyframes intro{
+    to{
+        display: block;
+        background-image: linear-gradient(to bottom right,black, rgb(6, 56, 122),darkturquoise);
+        z-index: 4;
+    }
+    from{
+        display: block;
+        z-index: 4;
+        background-image: linear-gradient(to bottom right,black,black,black);
+    }
+}
+.logo{
+    height: 100%;
+    width: 60%;
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 0;
+    overflow: hidden;
+}
+.fx{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: none;
+    z-index: 0;
+    opacity: 0.3;
+    overflow: hidden;
+    position: absolute;
+    animation-name: fx1;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+@keyframes fx1{
+   100%{
+    background-image: linear-gradient(to bottom right,black,black,black);
+       z-index: 5;
+       opacity: 1;
+   }
+   67%{
+    background-image: linear-gradient(to bottom right,black,black,rgb(6,56,122));
+       z-index: 5;
+       opacity: 1;
+   }
+   33%{
+    background-image: linear-gradient(to bottom right,black,rgb(6,56,122),darkturquoise);
+       z-index: 5;
+       opacity: 1;
+   }
+   0%{
+       background-color: rgb(6, 56, 122);
+       z-index: 5;
+       opacity: 1;
+   }
+}
+
+
+
+
+.nav{
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    position: absolute;
+    overflow: hidden;
+    animation-name: hoverfx;
+    animation-duration: 11s;
+    animation-iteration-count: 1;
+}
+@keyframes hoverfx{
+    from{
+        z-index: -1;
+    }
+    to{
+        z-index: -1;
+    }
+
+}
+.item1,.item2,.item3,.item4,.item5,.item6,.item8,.item7{
+    background-color: rgb(6, 56, 122);
+    display: block;
+    
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 12%;
+    position: absolute;
+    text-align: center;
+}
+.item1 a{
+    color: darkturquoise;
+    font-size: 20px;
+    text-decoration-line: none;
+}
+.item2 a{
+    color: darkturquoise;
+    font-size: 20px;
+    text-decoration-line: none;
+}
+.item3 a{
+    color: darkturquoise;
+    font-size: 20px;
+    text-decoration-line: none;
+}
+.item4 a{
+    color: darkturquoise;
+    font-size: 20px;
+    text-decoration-line: none;
+}
+.item5 a{
+    color: darkturquoise;
+    font-size: 20px;
+    text-decoration-line: none;
+}
+.item6 a{
+    color: darkturquoise;
+    font-size: 20px;
+    text-decoration-line: none;
+}
+.item7 a{
+    color: darkturquoise;
+    font-size: 20px;
+    text-decoration-line: none;
+}
+.item8 a{
+    color: darkturquoise;
+    font-size: 20px;
+    text-decoration-line: none;
+}
+.item1:hover{
+    background-color: darkturquoise;
+}
+.item2:hover{
+    background-color: darkturquoise;
+}
+.item3:hover{
+    background-color: darkturquoise;
+}
+.item4:hover{
+    background-color: darkturquoise;
+}
+.item5:hover{
+    background-color: darkturquoise;
+}
+.item6:hover{
+    background-color: darkturquoise;
+}
+.item7:hover{
+    background-color: darkturquoise;
+}
+.item8:hover{
+    background-color: darkturquoise;
+}
+.item1:hover a{
+    color: rgb(6, 56, 122);
+    font-size: 30px;
+}
+.item2:hover a{
+    color: rgb(6, 56, 122);
+    font-size: 30px;
+}
+.item3:hover a{
+    color: rgb(6, 56, 122);
+    font-size: 30px;
+}
+.item4:hover a{
+    color: rgb(6, 56, 122);
+    font-size: 30px;
+}
+.item5:hover a{
+    color: rgb(6, 56, 122);
+    font-size: 30px;
+}
+.item6:hover a{
+    color: rgb(6, 56, 122);
+    font-size: 30px;
+}
+.item7:hover a{
+    color: rgb(6, 56, 122);
+    font-size: 30px;
+}
+.item8:hover a{
+    color: rgb(6, 56, 122);
+    font-size: 30px;
+}
+.item1{
+    margin-top: 10%;
+    margin-left: 60%;
+}
+.item2{
+    margin-top: 10%;
+    margin-left: 20%;
+}
+.item3{
+    margin-top: 20%;
+    margin-left: 75%;
+}
+.item4{
+    margin-top: 20%;
+    margin-left: 10%;
+}
+.item5{
+    margin-top: 30%;
+    margin-left: 75%;
+}
+.item6{
+    margin-top: 30%;
+    margin-left: 10%;
+}
+.item7{
+    margin-top: 40%;
+    margin-left: 20%;
+}
+.item8{
+    margin-top: 40%;
+    margin-left: 60%;
+}
